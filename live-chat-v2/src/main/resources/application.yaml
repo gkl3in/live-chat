@@ -7,3 +7,6 @@ spring:
     redis:
       host: ${REDIS_HOST:localhost}
       port: ${REDIS_PORT:6379}
+app:
+  auth:
+    jwks-url: ${JWKS_URL:https://dev-oqil4wmd6j6lc77a.us.auth0.com/.well-known/jwks.json}
