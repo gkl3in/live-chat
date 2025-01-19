@@ -8,6 +8,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 
 @Component
 public class WebSocketHandler extends TextWebSocketHandler {
+
     @Override
     public void afterConnectionEstablished(WebSocketSession session) {
         System.out.println("[afterConnectionEstablished] session id " + session.getId());
